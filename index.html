@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to dariodarski.com</title>
+  <link rel="canonical" href="https://dariodarski.com/">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=https://dariodarski.com/">
+  <script>
+    const destination = new URL(
+      window.location.pathname + window.location.search + window.location.hash,
+      "https://dariodarski.com"
+    );
+    window.location.replace(destination.href);
+  </script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 2rem; text-align: center;">
+  <p>Redirecting to <a id="fallback-link" href="https://dariodarski.com/">dariodarski.com</a>...</p>
+  <script>
+    document.getElementById("fallback-link").href = destination.href;
+  </script>
+</body>
+</html>
